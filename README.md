@@ -1,5 +1,6 @@
 #  Simulação de Içamento de Cargas
 
+Equipe Otavio .e, Jin, Tiago, Leo e Gustavo .c
 
 LINK -> wdescuderia.vercel.app
 
