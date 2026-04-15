@@ -1,5 +1,9 @@
 #  Simulação de Içamento de Cargas
 
+
+LINK -> wdescuderia.vercel.app
+
+
 Sistema interativo de simulação do processo de içamento de cargas por guindaste, com suporte a **Container** (4 módulos de canto) e **Big Bag** (1 gancho central).
 
 Desenvolvido com React + TypeScript + Tailwind CSS + shadcn/ui.
