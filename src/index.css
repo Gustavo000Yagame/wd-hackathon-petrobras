@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 220 14% 96%;
+    --foreground: 220 14% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 14% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 14% 10%;
+
+    --primary: 220 70% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 92%;
+    --secondary-foreground: 220 14% 30%;
+
+    --muted: 220 14% 95%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 220 14% 92%;
+    --accent-foreground: 220 14% 10%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 87%;
+    --input: 220 13% 87%;
+    --ring: 220 70% 50%;
+
+    --radius: 0.5rem;
+
+    --warning: 38 92% 50%;
+    --success: 142 71% 35%;
+    --danger: 0 72% 51%;
+    --info: 220 70% 50%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 14% 10%;
+    --sidebar-primary: 220 70% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 95%;
+    --sidebar-accent-foreground: 220 14% 10%;
+    --sidebar-border: 220 13% 90%;
+    --sidebar-ring: 220 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply bg-card border border-border rounded-md p-4;
+  }
+  .panel-header {
+    @apply text-sm font-semibold text-foreground mb-3;
+  }
+  .stat-card {
+    @apply bg-card border border-border rounded-md p-4;
+  }
+  .status-dot {
+    @apply w-2 h-2 rounded-full;
+  }
+  .status-locked {
+    @apply bg-green-50 border-green-200 text-green-700;
+  }
+  .status-process {
+    @apply bg-yellow-50 border-yellow-200 text-yellow-700;
+  }
+  .status-error {
+    @apply bg-red-50 border-red-200 text-red-700;
+  }
+}
